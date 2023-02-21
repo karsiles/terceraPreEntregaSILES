@@ -1,0 +1,184 @@
+/*main*/
+main .formatoTexto2 {
+  display: none; }
+  main .formatoTexto2 .col-2 {
+    width: 30%; }
+
+aside .aside-index {
+  display: none; }
+
+/*estilo de main*/
+main .docente-proyecto {
+  display: none; }
+
+/*estilo de aside*/
+aside .aside-docente {
+  display: none; }
+
+/*estilos del main*/
+main div p .formatoTexto5 {
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 24px;
+  margin: 2rem; }
+
+/*estilo del aside*/
+aside .aside-alumnos {
+  display: none; }
+
+/*estilos del aside-comunidad*/
+aside .aside-comunidad {
+  display: none; }
+
+/*estilo de main*/
+main .formatoTexto6 {
+  font-family: 'Arimo', sans-serif;
+  text-align: justify;
+  padding: 1rem; }
+
+main span {
+  display: block; }
+
+/*estilo de aside*/
+aside .aside-contacto {
+  display: none; }
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos generales*/
+body {
+  font-family: 'Arimo', sans-serif;
+  font-size: 1rem;
+  background-size: cover;
+  background-image: linear-gradient(#fcf94f, white); }
+  body header {
+    grid-area: header; }
+    body header h1 {
+      text-align: center;
+      font-family: 'Rubik Vinyl',cursive;
+      font-size: 80px;
+      font-size-adjust: 1.5;
+      margin: 1rem;
+      padding: 1rem; }
+    body header nav div ul li {
+      margin: 5px;
+      display: inline-block;
+      list-style: none;
+      background-color: #e6e3e7;
+      font-size: 20px;
+      text-decoration: underline;
+      text-transform: uppercase;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 4;
+      box-shadow: 5px 3px #464545;
+      border-radius: 100%; }
+      body header nav div ul li :hover {
+        background-color: #f77d45; }
+  body main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body main .contacto-img {
+      width: 70%; }
+  body aside {
+    grid-area: aside; }
+  body footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    gap: 1rem; }
+
+@media screen and (min-width: 600px) {
+  aside .aside-index {
+    display: block;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  aside .aside-docente {
+    display: block; }
+  aside .aside-alumnos {
+    display: block; }
+  aside .aside-comunidad {
+    display: block; }
+  aside .aside-contacto {
+    display: block; }
+  aside .boton {
+    background-color: #f00e2c;
+    margin: 0.5rem;
+    padding: 0.7rem;
+    text-align: center;
+    color: antiquewhite;
+    box-shadow: 3px 3px; } }
+
+@media screen and (min-width: 1020px) {
+  body .contenedor-uno {
+    display: grid;
+    grid-template-columns: 2fr 2 fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: "header header header" "main main aside" "main main aside" "footer footer footer";
+    gap: 10px; }
+  body .contenedor-dos {
+    display: grid;
+    grid-template-columns: 2fr 2 fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "header header header" "main main  aside"  "footer footer footer";
+    gap: 10px; }
+  body .contenedor-tres {
+    display: grid;
+    grid-template-columns: 2fr 2 fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: "header header header" "main main  aside" "footer footer footer";
+    gap: 10px; }
+  body .contenedor-cuatro {
+    display: grid;
+    grid-template-columns: 2fr 2 fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-areas: "header header header" "main main  aside" "footer footer footer";
+    gap: 10px; }
+  body .contenedor-cinco {
+    display: grid;
+    grid-template-columns: 2fr 1 fr 2fr;
+    grid-template-rows: 0.4fr 1fr 0.4fr;
+    grid-template-areas: "header header header" "main main aside" "footer footer footer";
+    gap: 5px; }
+  body main p .formatoTexto2 {
+    display: block;
+    text-align: justify; }
+  body main p .formatoTexto1 {
+    text-align: justify; }
+  body main p .formatoTexto2 {
+    text-align: justify; }
+  body main p .formatoTexto4 {
+    font-family: 'Arimo', sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+    background-color: #faf7f7; }
+  body main .centrarSubtitulo {
+    width: 550px;
+    color: red;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-size-adjust: 1.5; }
+  body main h2 .estiloTexto {
+    font-family: 'Arimo', sans-serif;
+    width: 300px;
+    text-align: center;
+    color: brown; }
+  body main div .docente-proyecto {
+    display: block;
+    text-align: center;
+    padding: 1rem; } }
